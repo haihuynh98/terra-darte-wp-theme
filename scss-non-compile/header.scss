@@ -1,0 +1,219 @@
+.main-header {
+  @include screen-more('tablet') {
+    padding: 10px 0;
+  }
+
+  &.nav-has-bg {
+    background-color: $primaryColor;
+    transition: 0.3s;
+
+    .btn-booknow {
+      @include screen-more('tablet') {
+        background-color: white;
+        color: $primaryColor !important;
+      }
+    }
+
+    .navbar-nav {
+      @include screen-more('tablet') {
+        li:last-child {
+          padding-right: 50px!important;
+        }
+      }
+    }
+
+    .center-logo {
+      top: -10% !important;
+      img.logo {
+        height: 50px !important;
+      }
+    }
+  }
+  .nav-center-logo {
+    position: relative;
+    .center-logo {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: 0 auto;
+      width: fit-content;
+      height: fit-content;
+      transition: 0.3s;
+
+      img.logo {
+        height: 100px;
+        transition: 0.3s height;
+      }
+    }
+  }
+  img.logo {
+    width: auto;
+    height: 50px;
+  }
+
+  .navbar {
+    transition: 0.3s;
+
+    @include screen-more('tablet') {
+      li.nav-item:last-child {
+        padding-right: 100px;
+      }
+    }
+
+    button.navbar-toggler {
+      box-shadow: none;
+      border: none;
+      color: white;
+
+      &:not(.collapsed) {
+        svg {
+          .middle {
+            x: 0;
+            opacity: 0;
+          }
+          .top {
+            transform: rotate(45deg);
+            transform-origin: center top;
+            x: 50px;
+            y: 35px;
+          }
+          .bottom {
+            transform: rotate(-45deg);
+            transform-origin: center top;
+            x: -20px;
+            y: 25px;
+          }
+        }
+
+      }
+      .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      svg {
+        cursor: pointer;
+
+        rect {
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+    .navbar-collapse {
+      display: flex;
+      justify-content:space-between;
+      .navbar-nav {
+        width: 50%;
+        transition: 0.3s;
+        .nav-item {
+          transition: 0.3s;
+          a {
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+        }
+      }
+
+      &.collapse:not(.show) {
+        @include screen-less('tablet') {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .menu-right {
+    width: 50%;
+    ul.button-group {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      margin-bottom: 0;
+
+      > li {
+		  height: fit-content;
+		  margin: auto 10px;
+
+        > a {
+          color: white;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .navbar-collapse {
+    @media (max-width: 991.98px) {
+      padding-top: 56px;
+      position: absolute;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      background: #646464CF;
+      width: 100vw;
+      height: 0;
+      transition: 0.3s height;
+      justify-content: flex-start !important;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+
+      .navbar-nav {
+        transition: 0.3s;
+        padding-right: 0 !important;
+      }
+      &>ul {
+        & > li {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          width: 100%;
+          & > a{
+            width: 80%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            color: white !important;
+          }
+        }
+      }
+    }
+
+    &.show {
+      height: 100vh;
+    }
+
+    @include screen-less('tablet') {
+      .menu-right {
+        border-top: 1px solid rgb(172 172 172);
+        padding-top: 20px;
+        .button-group {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+}
+
+.switch-lang {
+	.lang-item {
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.current-lang {
+		a {
+			font-weight: bold;
+			text-decoration: underline !important;
+		}
+	}
+
+}

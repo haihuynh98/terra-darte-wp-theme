@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../scss/single.scss"],"names":[],"mappings":"AAAA;EACC;;;AAGD;EACC;;AACA;EACC","file":"single.css","sourcesContent":[".site-main {\n\tmargin-top: 84px;\n}\n\n.content-single {\n\tpadding-top: 30px;\n\timg {\n\t\tmax-width: 100%;\n\t}\n\n\n}\n"]}

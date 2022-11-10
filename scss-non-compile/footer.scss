@@ -1,0 +1,88 @@
+.common-footer {
+  width: 100%;
+  background-color: $bg-footer-color;
+  margin-top: 20px;
+
+  .info-page-wrap {
+    padding-top: 20px;
+
+    a {
+      color: white;
+
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+
+    .content-info {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      color: white;
+      position: relative;
+
+      .text-copyright {
+        padding: 0 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+        @include screen-less('tablet') {
+          position: unset !important;
+          flex-direction: column;
+        }
+
+        >p {
+          font-size: 13px;
+          @include screen-less('tablet') {
+            margin-bottom: 8px;
+          }
+        }
+      }
+
+      .name-brand {
+        text-transform: uppercase;
+        font-size: 30px;
+        color: $primaryColor;
+      }
+
+      .btn-booknow {
+        margin-bottom: 20px;
+      }
+
+      ul.social-contact {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+
+
+        & > li {
+          margin: 0 20px;
+
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .line-contact-us {
+    width: 100%;
+    padding: 50px 0;
+    background-color: $secondaryColor;
+
+    .text-contact-us {
+      text-align: center;
+      font-size: 30px;
+      color: white;
+      margin: 0;
+    }
+  }
+}

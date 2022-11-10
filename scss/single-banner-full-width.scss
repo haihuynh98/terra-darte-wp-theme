@@ -1,0 +1,28 @@
+.header-banner {
+	height: 40vh;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.content {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: fit-content;
+		margin: auto;
+		z-index: 2;
+		text-align: center;
+		color: white;
+
+		.content-center {
+			margin-top: 10px;
+			p {
+				margin-bottom: 8px;
+			}
+		}
+	}
+}
