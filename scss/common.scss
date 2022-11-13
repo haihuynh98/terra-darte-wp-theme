@@ -1,141 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
 @font-face {
-  font-family: "Bodoni";
-  src: url("fonts/CALBodoniFerrara.ttf") format("truetype");
-  font-style: normal;
-  font-display: swap;
+	font-family: "Bodoni";
+	src: url("fonts/CALBodoniFerrara.ttf") format("truetype");
+	font-style: normal;
+	font-display: swap;
 }
+
 // import css non compile
 @import "../scss-non-compile/breakpoint";
 @import "../scss-non-compile/var";
 @import "../scss-non-compile/header";
 @import "../scss-non-compile/footer";
 
-@each  $name, $breakpoint in $breakpoints {
-  @include respond-to($name) {
-    .hide-#{$name} {
-      display: none !important;
-    }
-  }
+@each $name, $breakpoint in $breakpoints {
+	@include respond-to($name) {
+		.hide-#{$name} {
+			display: none !important;
+		}
+	}
 }
 
 .z-index-1000-mobile {
-  z-index: 1000 !important;
+	z-index: 1000 !important;
 }
 
 :root {
-  --font-size-title : 50px;
+	--font-size-title: 50px;
 
-  @include screen-less('mobile') {
-    --font-size-title : 40px;
-  }
+	@include screen-less('mobile') {
+		--font-size-title: 40px;
+	}
 }
 
 * {
-  font-family: "Bodoni";
+	font-family: "Bodoni";
+}
+
+html[lang="vi"] {
+	*:not(.fa-solid) {
+		font-family: 'Crimson Text', serif;
+	}
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .btn {
 
-  &.btn-booknow, &.btn-readmore {
-    background-color: $primaryColor;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border-radius: 30px;
-    padding: 6px 20px;
-    transition: 0.3s;
-  }
+	&.btn-booknow, &.btn-readmore {
+		background-color: $primaryColor;
+		color: white;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 1px;
+		border-radius: 30px;
+		padding: 6px 20px;
+		transition: 0.3s;
+	}
 }
 
 body {
-  position: relative;
+	position: relative;
 
-  &:after {
-    content: '';
-    background-image: url("images/logo-terra-only.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    width: 350px;
-    height: 800px;
-    position: fixed;
-    right: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto 0 auto auto;
-    z-index: -100;
-    opacity: 0.5;
+	&:after {
+		content: '';
+		background-image: url("images/logo-terra-only.png");
+		background-repeat: no-repeat;
+		background-position: left;
+		width: 350px;
+		height: 800px;
+		position: fixed;
+		right: 0;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		margin: auto 0 auto auto;
+		z-index: -100;
+		opacity: 0.5;
 
-    @include screen-less('tablet') {
-      width: 200px;
-      background-size: cover;
-      height: 500px;
-    }
+		@include screen-less('tablet') {
+			width: 200px;
+			background-size: cover;
+			height: 500px;
+		}
 
-    @include screen-less('mobile') {
-      width: 140px;
-      background-size: cover;
-      height: 350px;
-    }
-  }
+		@include screen-less('mobile') {
+			width: 140px;
+			background-size: cover;
+			height: 350px;
+		}
+	}
 }
 
 .overlay {
-  background-color: #4F4F4F99;
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  top: 0;
-  left: 0;
+	background-color: #4F4F4F99;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	top: 0;
+	left: 0;
 }
 
 .bg-gray-light {
-  background-color: $bg-gray-light-color !important;
+	background-color: $bg-gray-light-color !important;
 }
 
 @for $i from 1 through 10 {
-  .all-child-mt-#{$i * 10} {
-    & > * {
-      margin-top: $i * 10px;
-    }
-  }
+	.all-child-mt-#{$i * 10} {
+		& > * {
+			margin-top: $i * 10px;
+		}
+	}
 }
+
 @for $i from 1 through 10 {
-  .all-child-mb-#{$i * 10} {
-    & > * {
-      margin-bottom: $i * 10px;
-    }
-  }
+	.all-child-mb-#{$i * 10} {
+		& > * {
+			margin-bottom: $i * 10px;
+		}
+	}
 }
+
 @for $i from 1 through 10 {
-  .all-child-ml-#{$i * 10} {
-    & > * {
-      margin-left: $i * 10px;
-    }
-  }
+	.all-child-ml-#{$i * 10} {
+		& > * {
+			margin-left: $i * 10px;
+		}
+	}
 }
+
 @for $i from 1 through 10 {
-  .all-child-mr-#{$i * 10} {
-    & > * {
-      margin-right: $i * 10px;
-    }
-  }
+	.all-child-mr-#{$i * 10} {
+		& > * {
+			margin-right: $i * 10px;
+		}
+	}
 }
 
 @for $i from 10 through 30 {
-  .font-size-#{$i} {
-      font-size: $i * 1px;
-  }
+	.font-size-#{$i} {
+		font-size: $i * 1px;
+	}
 }
 
 .middle-line-secondary {
-  background-color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity))!important;
-  height: 1px;
+	background-color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+	height: 1px;
 }
