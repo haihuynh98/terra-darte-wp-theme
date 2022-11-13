@@ -71,7 +71,7 @@ $menu_items = wp_get_nav_menu_items($menu->term_id);
 				<div class="menu-right text-end">
 					<ul class="button-group switch-lang">
 						<li><a href="<?= esc_attr( get_option('tiger_contact_page_uri') )?>" class="btn btn-booknow">Book now</a></li>
-						<?php pll_the_languages(); ?>
+						<?php pll_the_languages(['display_names_as' => 'slug']); ?>
 					</ul>
 				</div>
 			</div>

@@ -181,6 +181,7 @@
 }
 
 .switch-lang .lang-item a {
+  text-transform: uppercase;
   text-decoration: none;
 }
 .switch-lang .current-lang a {
@@ -299,7 +300,7 @@
   font-family: "Bodoni";
 }
 
-html[lang=vi] *:not(.fa-solid) {
+html[lang=vi] *:not(.fa-solid):not(.fa-brands) {
   font-family: "Crimson Text", serif;
 }
 
