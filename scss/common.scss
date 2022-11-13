@@ -38,7 +38,7 @@
 }
 
 html[lang="vi"] {
-	*:not(.fa-solid) {
+	*:not(.fa-solid):not(.fa-brands) {
 		font-family: 'Crimson Text', serif;
 	}
 }
