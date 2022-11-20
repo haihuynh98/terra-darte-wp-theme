@@ -1,13 +1,15 @@
-<?php if($bannerImage = getTigerOption('banner_image_url')):?>
+<?php
+ $suffix = pll_current_language()!='en'?pll_current_language():'';
+if($bannerImage = getTigerOption('banner_image_url', $suffix)):?>
 <section class="banner-image" id="banner_image"
 		 style="background-image: url('<?= $bannerImage?>')">
 	<div class="overlay"></div>
 	<div class="content-center">
 		<div class="content">
-			<h1 class="title text-uppercase"><?= getTigerOption('heading_banner')?></h1>
+			<h1 class="title text-uppercase"><?= getTigerOption('heading_banner', $suffix)?></h1>
 			<h5 class="subtext text-uppercase text-long-space">Interior disign luxury</h5>
 		</div>
-		<a class="nice-button d-flex" href="<?= getTigerOption('contact_page_uri')?>">
+		<a class="nice-button d-flex" href="<?= getTigerOption('contact_page_uri', $suffix)?>">
 			<span>Schedule Your Design Consultation</span>
 			<span class="icon-arrow-right">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"

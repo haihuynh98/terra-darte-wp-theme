@@ -7,6 +7,11 @@
         "title": "Contact page uri",
         "type": "field",
         "input_type": "text"
+      },
+      "contact_page_uri_vi": {
+        "title": "Contact page uri vi",
+        "type": "field",
+        "input_type": "text"
       }
     }
   },
@@ -19,8 +24,18 @@
         "type": "field",
         "input_type": "text"
       },
+      "banner_image_url_vi": {
+        "title": "Banner Image Url vi",
+        "type": "field",
+        "input_type": "text"
+      },
       "heading_banner": {
         "title": "Heading Banner",
+        "type": "field",
+        "input_type": "text"
+      },
+      "heading_banner_vi": {
+        "title": "Heading Banner vi",
         "type": "field",
         "input_type": "text"
       },
@@ -34,13 +49,13 @@
         "type": "field",
         "input_type": "textarea"
       },
-      "home_read_more_about_us": {
-        "title": "Read more uri about us",
+      "home_about_us_description_vi": {
+        "title": "Description about us vi",
         "type": "field",
-        "input_type": "text"
+        "input_type": "textarea"
       },
-      "home_image_right_col_about_us": {
-        "title": "Image right side about us",
+      "home_about_us_vi": {
+        "title": "Heading About Us vi",
         "type": "field",
         "input_type": "text"
       },
@@ -49,153 +64,18 @@
         "type": "field",
         "input_type": "text"
       },
-      "home_services_heading_1": {
-        "title": "Services - heading 1",
+      "home_image_about_us_vi": {
+        "title": "Image about us vi",
         "type": "field",
         "input_type": "text"
       },
-      "home_services_description_1": {
-        "title": "Services - description 1",
-        "type": "field",
-        "input_type": "textarea"
-      },
-      "home_services_url_1": {
-        "title": "Services - direct link 1",
+      "home_image_right_col_about_us": {
+        "title": "Image right side about us",
         "type": "field",
         "input_type": "text"
       },
-      "home_services_icon_1": {
-        "title": "Services - icon 1",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_image_1": {
-        "title": "Services - image uri 1",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_heading_2": {
-        "title": "Services - heading 2",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_description_2": {
-        "title": "Services - description 2",
-        "type": "field",
-        "input_type": "textarea"
-      },
-      "home_services_url_2": {
-        "title": "Services - direct link 2",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_icon_2": {
-        "title": "Services - icon 2",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_image_2": {
-        "title": "Services - image uri 2",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_heading_3": {
-        "title": "Services - heading 3",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_description_3": {
-        "title": "Services - description 3",
-        "type": "field",
-        "input_type": "textarea"
-      },
-      "home_services_url_3": {
-        "title": "Services - direct link 3",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_icon_3": {
-        "title": "Services - icon 3",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_image_3": {
-        "title": "Services - image uri 3",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_heading_4": {
-        "title": "Services - heading 4",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_description_4": {
-        "title": "Services - description 4",
-        "type": "field",
-        "input_type": "textarea"
-      },
-      "home_services_url_4": {
-        "title": "Services - direct link 4",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_icon_4": {
-        "title": "Services - icon 4",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_image_4": {
-        "title": "Services - image uri 4",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_heading_5": {
-        "title": "Services - heading 5",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_description_5": {
-        "title": "Services - description 5",
-        "type": "field",
-        "input_type": "textarea"
-      },
-      "home_services_url_5": {
-        "title": "Services - direct link 5",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_icon_5": {
-        "title": "Services - icon 5",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_services_image_5": {
-        "title": "Services - image uri 5",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_quote_background_image": {
-        "title": "Quote - background image uri",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_quote_content": {
-        "title": "Quote - content",
-        "type": "field",
-        "input_type": "textarea"
-      },
-      "home_quote_writer": {
-        "title": "Quote - writer",
-        "type": "field",
-        "input_type": "text"
-      },
-      "home_partner_content": {
-        "title": "Partner - Content",
-        "type": "field",
-        "input_type": "textarea"
-      },
-      "home_partner_read_more_url": {
-        "title": "Partner - Read more url",
+      "home_image_right_col_about_us_vi": {
+        "title": "Image right side about us vi",
         "type": "field",
         "input_type": "text"
       },
@@ -204,8 +84,28 @@
         "type": "field",
         "input_type": "text"
       },
+      "home_partner_big_image_vi": {
+        "title": "Partner - Big image vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_partner_content": {
+        "title": "Partner - Content",
+        "type": "field",
+        "input_type": "textarea"
+      },
+      "home_partner_content_vi": {
+        "title": "Partner - Content vi",
+        "type": "field",
+        "input_type": "textarea"
+      },
       "home_partner_image_1": {
         "title": "Partner - Image 1",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_partner_image_1_vi": {
+        "title": "Partner - Image 1 vi",
         "type": "field",
         "input_type": "text"
       },
@@ -214,8 +114,18 @@
         "type": "field",
         "input_type": "text"
       },
+      "home_partner_image_2_vi": {
+        "title": "Partner - Image 2 vi",
+        "type": "field",
+        "input_type": "text"
+      },
       "home_partner_image_3": {
         "title": "Partner - Image 3",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_partner_image_3_vi": {
+        "title": "Partner - Image 3 vi",
         "type": "field",
         "input_type": "text"
       },
@@ -224,12 +134,321 @@
         "type": "field",
         "input_type": "text"
       },
+      "home_partner_image_4_vi": {
+        "title": "Partner - Image 4 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_partner_read_more_url": {
+        "title": "Partner - Read more url",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_partner_read_more_url_vi": {
+        "title": "Partner - Read more url vi",
+        "type": "field",
+        "input_type": "text"
+      },
       "home_project_read_more": {
         "title": "Projects - Projects url",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_project_read_more_vi": {
+        "title": "Projects - Projects url vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_quote_background_image": {
+        "title": "Quote - background image uri",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_quote_background_image_vi": {
+        "title": "Quote - background image uri vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_quote_content": {
+        "title": "Quote - content",
+        "type": "field",
+        "input_type": "textarea"
+      },
+      "home_quote_content_vi": {
+        "title": "Quote - content vi",
+        "type": "field",
+        "input_type": "textarea"
+      },
+      "home_quote_writer": {
+        "title": "Quote - writer",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_quote_writer_vi": {
+        "title": "Quote - writer vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_read_more_about_us": {
+        "title": "Read more uri about us",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_read_more_about_us_vi": {
+        "title": "Read more uri about us vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_description_1": {
+        "title": "Services - description 1",
+        "type": "field",
+        "input_type": "textarea"
+      },
+      "home_services_description_1_vi": {
+        "title": "Services - description 1 vi",
+        "type": "field",
+        "input_type": "textarea"
+      },
+      "home_services_description_2": {
+        "title": "Services - description 2",
+        "type": "field",
+        "input_type": "textarea"
+      },
+      "home_services_description_2_vi": {
+        "title": "Services - description 2 vi",
+        "type": "field",
+        "input_type": "textarea"
+      },
+      "home_services_description_3": {
+        "title": "Services - description 3",
+        "type": "field",
+        "input_type": "textarea"
+      },
+      "home_services_description_3_vi": {
+        "title": "Services - description 3 vi",
+        "type": "field",
+        "input_type": "textarea"
+      },
+      "home_services_description_4": {
+        "title": "Services - description 4",
+        "type": "field",
+        "input_type": "textarea"
+      },
+      "home_services_description_4_vi": {
+        "title": "Services - description 4 vi",
+        "type": "field",
+        "input_type": "textarea"
+      },
+      "home_services_description_5": {
+        "title": "Services - description 5",
+        "type": "field",
+        "input_type": "textarea"
+      },
+      "home_services_description_5_vi": {
+        "title": "Services - description 5 vi",
+        "type": "field",
+        "input_type": "textarea"
+      },
+      "home_services_heading_1": {
+        "title": "Services - heading 1",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_heading_1_vi": {
+        "title": "Services - heading 1 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_heading_2": {
+        "title": "Services - heading 2",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_heading_2_vi": {
+        "title": "Services - heading 2 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_heading_3": {
+        "title": "Services - heading 3",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_heading_3_vi": {
+        "title": "Services - heading 3 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_heading_4": {
+        "title": "Services - heading 4",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_heading_4_vi": {
+        "title": "Services - heading 4 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_heading_5": {
+        "title": "Services - heading 5",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_heading_5_vi": {
+        "title": "Services - heading 5 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_icon_1": {
+        "title": "Services - icon 1",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_icon_1_vi": {
+        "title": "Services - icon 1 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_icon_2": {
+        "title": "Services - icon 2",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_icon_2_vi": {
+        "title": "Services - icon 2 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_icon_3": {
+        "title": "Services - icon 3",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_icon_3_vi": {
+        "title": "Services - icon 3 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_icon_4": {
+        "title": "Services - icon 4",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_icon_4_vi": {
+        "title": "Services - icon 4 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_icon_5": {
+        "title": "Services - icon 5",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_icon_5_vi": {
+        "title": "Services - icon 5 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_image_1": {
+        "title": "Services - image uri 1",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_image_1_vi": {
+        "title": "Services - image uri 1 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_image_2": {
+        "title": "Services - image uri 2",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_image_2_vi": {
+        "title": "Services - image uri 2 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_image_3": {
+        "title": "Services - image uri 3",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_image_3_vi": {
+        "title": "Services - image uri 3 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_image_4": {
+        "title": "Services - image uri 4",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_image_4_vi": {
+        "title": "Services - image uri 4 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_image_5": {
+        "title": "Services - image uri 5",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_image_5_vi": {
+        "title": "Services - image uri 5 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_url_1": {
+        "title": "Services - direct link 1",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_url_1_vi": {
+        "title": "Services - direct link 1 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_url_2": {
+        "title": "Services - direct link 2",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_url_2_vi": {
+        "title": "Services - direct link 2 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_url_3": {
+        "title": "Services - direct link 3",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_url_3_vi": {
+        "title": "Services - direct link 3 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_url_4": {
+        "title": "Services - direct link 4",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_url_4_vi": {
+        "title": "Services - direct link 4 vi",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_url_5": {
+        "title": "Services - direct link 5",
+        "type": "field",
+        "input_type": "text"
+      },
+      "home_services_url_5_vi": {
+        "title": "Services - direct link 5 vi",
         "type": "field",
         "input_type": "text"
       }
     }
   }
 }
-

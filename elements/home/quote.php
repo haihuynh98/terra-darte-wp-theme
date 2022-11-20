@@ -1,9 +1,9 @@
-<?php if (function_exists('getTigerOption')): ?>
-	<?php if (getTigerOption('home_quote_content')): ?>
+<?php if (function_exists('getTigerOption')): $suffix = pll_current_language()!='en'?pll_current_language():'';?>
+	<?php if (getTigerOption('home_quote_content', $suffix)): ?>
 		<section class="quote" id="quote">
 			<div class="container-fluid">
 				<div class="quote-wrap"
-					 style="background-image: url('<?= getTigerOption('home_quote_background_image') ?>')">
+					 style="background-image: url('<?= getTigerOption('home_quote_background_image', $suffix) ?>')">
 					<div class="overlay"></div>
 					<div class="icon-quote">
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -14,8 +14,8 @@
 						</svg>
 					</div>
 					<div class="content-wrap">
-						<h4 class="content"><?= getTigerOption('home_quote_content') ?></h4>
-						<h4 class="name-writer"><?= getTigerOption('home_quote_writer') ?></h4>
+						<h4 class="content"><?= getTigerOption('home_quote_content', $suffix) ?></h4>
+						<h4 class="name-writer"><?= getTigerOption('home_quote_writer', $suffix) ?></h4>
 					</div>
 				</div>
 			</div>

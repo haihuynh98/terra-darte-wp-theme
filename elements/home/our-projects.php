@@ -1,6 +1,6 @@
 <?php
 
-if (function_exists('tiger_get_portfolio')): ?>
+if (function_exists('tiger_get_portfolio')): $suffix = pll_current_language()!='en'?pll_current_language():''; ?>
 <section class="latest-projects" id="latest_projects">
 	<div class="container-fluid">
 		<h2 class="title-section">Latest projects</h2>
@@ -38,7 +38,7 @@ if (function_exists('tiger_get_portfolio')): ?>
 		</div>
 		<?php if (function_exists('getTigerOption')): ?>
 			<div class="text-center w-100 pt-5">
-				<a href="<?= getTigerOption('home_project_read_more') ?>" class="btn btn-readmore ">View projects
+				<a href="<?= getTigerOption('home_project_read_more', $suffix) ?>" class="btn btn-readmore ">View projects
 					more</a>
 			</div>
 		<?php endif; ?>
