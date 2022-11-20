@@ -7,7 +7,7 @@ if($bannerImage = getTigerOption('banner_image_url', $suffix)):?>
 	<div class="content-center">
 		<div class="content">
 			<h1 class="title text-uppercase"><?= getTigerOption('heading_banner', $suffix)?></h1>
-			<h5 class="subtext text-uppercase text-long-space">Interior disign luxury</h5>
+			<h5 class="subtext text-uppercase text-long-space"><?= getTigerOption('subtext_banner', $suffix)?></h5>
 		</div>
 		<a class="nice-button d-flex" href="<?= getTigerOption('contact_page_uri', $suffix)?>">
 			<span>Schedule Your Design Consultation</span>

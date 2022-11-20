@@ -39,6 +39,16 @@
         "type": "field",
         "input_type": "text"
       },
+      "subtext_banner": {
+        "title": "Subtext Banner",
+        "type": "field",
+        "input_type": "text"
+      },
+      "subtext_banner_vi": {
+        "title": "Subtext Banner vi",
+        "type": "field",
+        "input_type": "text"
+      },
       "home_about_us": {
         "title": "Heading About Us",
         "type": "field",
