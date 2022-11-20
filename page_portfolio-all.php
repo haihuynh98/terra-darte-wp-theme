@@ -18,8 +18,8 @@ get_header(null, ['nav-has-bg' => true]);
 		<div class="container">
 			<div class="row mb-5 align-items-center">
 				<div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-					<h2>Our Projects</h2>
-					<p class="mb-0">Interior Design &amp; Professional Graphics Designer</p>
+					<h2><?= pll__('Our Services')?></h2>
+					<p class="mb-0"><?= pll__('Interior Design &amp; Professional Graphics Designer')?></p>
 				</div>
 				<div class="col-md-12 col-lg-6 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
 					<div id="filters" class="filters">
@@ -79,7 +79,7 @@ get_header(null, ['nav-has-bg' => true]);
 		<div class="container">
 			<div class="row justify-content-center text-center mb-4">
 				<div class="col-5">
-					<h3 class="h3 heading">My Clients</h3>
+					<h3 class="h3 heading"><?= pll__('My Clients')?></h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo inventore.</p>
 				</div>
 			</div>

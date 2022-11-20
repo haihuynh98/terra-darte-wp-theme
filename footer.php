@@ -14,10 +14,9 @@
 <footer class="common-footer" id="common_footer">
 	<div class="line-contact-us">
 		<div class="container-fluid">
-			<h4 class="text-contact-us">Contact us today for a no-obligation Design Consultation! <a
+			<h4 class="text-contact-us"><?= pll__('Contact us today for a no-obligation Design Consultation!')?> <a
 					href="<?= esc_attr(get_option('tiger_contact_page_uri')) ?>"
-					class="btn btn-booknow">Book
-					now</a></h4>
+					class="btn btn-booknow"><?= pll__('Book now')?> </a></h4>
 		</div>
 	</div>
 	<div class="info-page-wrap">

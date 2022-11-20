@@ -10,10 +10,9 @@
 						<div class="col-lg-6 col-12 col-md-12 col-sm-12 col-content-partner">
 							<div class="content-partner">
 								<div class="content">
-									<h2 class="title">Our Partners</h2>
+									<h2 class="title"><?= pll__('Our Partners')?></h2>
 									<p><?= getTigerOption('home_partner_content', $suffix) ?></p>
-									<a href="<?= getTigerOption('home_partner_read_more_url', $suffix) ?>">Read more about our
-										partners</a>
+									<a href="<?= getTigerOption('home_partner_read_more_url', $suffix) ?>"><?= pll__('Read more about our partners')?></a>
 								</div>
 								<ul class="row-image">
 									<?php for ($i = 1; $i <= 4; $i++): ?>

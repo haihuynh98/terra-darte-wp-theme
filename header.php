@@ -71,7 +71,7 @@ $menu_items = wp_get_nav_menu_items($menu->term_id);
 				<div class="menu-right text-end">
 					<ul class="button-group switch-lang">
 						<?php $suffix = pll_current_language()!='en'?pll_current_language():''?>
-						<li><a href="<?= esc_attr( getTigerOption('contact_page_uri', $suffix))?>" class="btn btn-booknow">Book now</a></li>
+						<li><a href="<?= esc_attr( getTigerOption('contact_page_uri', $suffix))?>" class="btn btn-booknow"><?= pll__('Book now')?></a></li>
 
 						<?php pll_the_languages(['display_names_as' => 'slug']); ?>
 					</ul>

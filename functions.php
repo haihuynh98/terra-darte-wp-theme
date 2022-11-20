@@ -382,3 +382,5 @@ function my_enqueue($hook) {
 }
 
 add_action('admin_enqueue_scripts', 'my_enqueue');
+
+require_once 'functions/lang-string.php';

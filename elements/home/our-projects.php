@@ -3,7 +3,7 @@
 if (function_exists('tiger_get_portfolio')): $suffix = pll_current_language()!='en'?pll_current_language():''; ?>
 <section class="latest-projects" id="latest_projects">
 	<div class="container-fluid">
-		<h2 class="title-section">Latest projects</h2>
+		<h2 class="title-section"><?= pll__('Latest projects')?></h2>
 		<div class="row row-projects">
 			<?php
 			$portfolio_query = tiger_get_portfolio(null, 12);
@@ -38,8 +38,7 @@ if (function_exists('tiger_get_portfolio')): $suffix = pll_current_language()!='
 		</div>
 		<?php if (function_exists('getTigerOption')): ?>
 			<div class="text-center w-100 pt-5">
-				<a href="<?= getTigerOption('home_project_read_more', $suffix) ?>" class="btn btn-readmore ">View projects
-					more</a>
+				<a href="<?= getTigerOption('home_project_read_more', $suffix) ?>" class="btn btn-readmore "><?= pll__('View projects more')?></a>
 			</div>
 		<?php endif; ?>
 	</div>

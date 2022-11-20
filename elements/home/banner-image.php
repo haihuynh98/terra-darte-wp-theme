@@ -10,7 +10,7 @@ if($bannerImage = getTigerOption('banner_image_url', $suffix)):?>
 			<h5 class="subtext text-uppercase text-long-space"><?= getTigerOption('subtext_banner', $suffix)?></h5>
 		</div>
 		<a class="nice-button d-flex" href="<?= getTigerOption('contact_page_uri', $suffix)?>">
-			<span>Schedule Your Design Consultation</span>
+			<span><?= pll__('Schedule Your Design Consultation')?></span>
 			<span class="icon-arrow-right">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
 					 class="bi bi-chevron-right" viewBox="0 0 16 16">

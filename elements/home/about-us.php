@@ -3,7 +3,7 @@
 	<div class="container-fluid">
 		<div class="content-quote">
 			<div class="col-title hide-pc">
-				<h2 class="title">About Us</h2>
+				<h2 class="title"><?= pll__('About us')?></h2>
 			</div>
 			<div class="col-image hide-tablet hide-mobile"
 				 style="background-image: url('<?= getTigerOption('home_image_right_col_about_us', $suffix)?>')">
@@ -20,7 +20,7 @@
 				</div>
 			</div>
 			<div class="col-title-vertical hide-tablet hide-mobile">
-				<h2 class="title-vertical">About Us</h2>
+				<h2 class="title-vertical"><?= pll__('About us')?></h2>
 			</div>
 		</div>
 	</div>
