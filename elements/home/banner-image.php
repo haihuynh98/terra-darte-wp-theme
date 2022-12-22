@@ -24,7 +24,7 @@ if($bannerImage = getTigerOption('banner_image_url', $suffix)):
 
 	<?php if($videoIsEnable): ?>
 	<div class="fullscreen-video">
-	<video autoplay muted loop id="fullscreen_video">
+	<video autoplay muted loop playsinline id="fullscreen_video">
 		<source src="wp-content/themes/terra-darte/images/DeCastelli-Brand.mp4" type="video/mp4">
 	</video>
 	</div>
