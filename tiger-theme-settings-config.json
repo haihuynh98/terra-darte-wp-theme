@@ -29,6 +29,26 @@
         "type": "field",
         "input_type": "text"
       },
+      "enable_video_fullscreen": {
+        "title": "Enable fullscreen video",
+        "type": "field",
+        "input_type": "checkbox"
+      },
+      "fullscreen_video_pc_url": {
+        "title": "Fullscreen video  Url",
+        "type": "field",
+        "input_type": "text"
+      },
+      "fullscreen_video_mobile_url": {
+        "title": "Fullscreen video Url (only mobile)",
+        "type": "field",
+        "input_type": "text"
+      },
+      "enable_banner_content": {
+        "title": "Enable banner content",
+        "type": "field",
+        "input_type": "checkbox"
+      },
       "heading_banner": {
         "title": "Heading Banner",
         "type": "field",

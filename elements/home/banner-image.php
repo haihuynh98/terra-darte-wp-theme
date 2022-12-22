@@ -1,8 +1,48 @@
 <?php
  $suffix = pll_current_language()!='en'?pll_current_language():'';
-if($bannerImage = getTigerOption('banner_image_url', $suffix)):?>
+ $videoOption = getTigerOption('enable_video_fullscreen');
+ $bannerContent = getTigerOption('enable_banner_content');
+ $bannerContentIsEnable = false;
+ $videoIsEnable = false;
+$videoMobile = $videoPC = '';
+ if (!empty($videoOption) && $videoOption == 1){
+	 $videoIsEnable = true;
+	 $videoPC = getTigerOption('fullscreen_video_pc_url');
+	 $videoMobile = getTigerOption('fullscreen_video_mobile_url');
+	 if (empty($videoMobile)) {
+		 $videoMobile = $videoPC;
+	 }
+ }
+if (!empty($bannerContent) && $bannerContent == 1){
+	$bannerContentIsEnable = true;
+}
+if($bannerImage = getTigerOption('banner_image_url', $suffix)):
+	?>
+
 <section class="banner-image" id="banner_image"
 		 style="background-image: url('<?= $bannerImage?>')">
+
+	<?php if($videoIsEnable): ?>
+	<div class="fullscreen-video">
+	<video autoplay muted loop id="fullscreen_video">
+		<source src="wp-content/themes/terra-darte/images/DeCastelli-Brand.mp4" type="video/mp4">
+	</video>
+	</div>
+
+		<script>
+			var width = window.innerWidth, url = '', source;
+			if(width <= 500)
+				url ='<?= esc_attr($videoMobile)?>';
+			else if(500) {
+				url = '<?= esc_attr($videoPC)?>';
+
+			}
+
+			source = '<source type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="'+url+'" media="all"></source><small>THIS BROWSER DOES NOT HAVE NATIVE VIDEO SUPPORT</small>';
+			document.getElementById('fullscreen_video').innerHTML = source;
+		</script>
+	<?php endif;?>
+	<?php if ($bannerContentIsEnable):?>
 	<div class="overlay"></div>
 	<div class="content-center">
 		<div class="content">
@@ -20,6 +60,7 @@ if($bannerImage = getTigerOption('banner_image_url', $suffix)):?>
             </span>
 		</a>
 	</div>
+	<?php endif ;?>
 	<div class="icon-arrow-down">
 		<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-down"
 			 viewBox="0 0 16 16">

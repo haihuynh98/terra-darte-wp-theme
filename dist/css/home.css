@@ -1,3 +1,30 @@
+.fullscreen-video {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.fullscreen-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+@media screen and (max-width: 1919px) {
+  .fullscreen-video video {
+    height: 100vh;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .fullscreen-video video {
+    height: auto;
+    width: 100vw;
+  }
+}
+
 .banner-image {
   height: 100vh;
   background-position: center;

@@ -2,6 +2,30 @@
 @import "../scss-non-compile/breakpoint";
 @import "../scss-non-compile/var";
 
+.fullscreen-video {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+	video {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		-ms-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+		@media screen and (max-width: 1919px) {
+			height: 100vh;
+			width: auto;
+		}
+		@media screen and (min-width: 1920px) {
+			height: auto;
+			width: 100vw;
+		}
+	}
+}
+
 .banner-image {
   height: 100vh;
   background-position: center;
